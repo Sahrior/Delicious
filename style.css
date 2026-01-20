@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body { font-family: 'Arial', sans-serif; 
+ }
+    .navbar
+     { background-color: #f8f9fa; 
+    }
+    .navbar-nav .nav-link {
+       font-weight: 500; 
+    }
+ .nav-link {
+    color: black; /* সাধারণ রঙ */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff6347; /* হোভার এবং অ্যাক্টিভ রঙ */
+}
+
+/* যদি আপনি আন্ডারলাইন চান */
+.nav-link.active {
+    border-bottom: 2px solid #ff6347;
+
+}
+
+ .nav-item .nav-link:hover{
+  color: #ff6347;
+ }
+     /* 1111111111 */
+    .hero { 
+      background: url("img/pizza.png") center/cover no-repeat; 
+      color: #fff; 
+      height: 100vh; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center;
+      position: relative;
+    
+    }
+    .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* কালো ওভারলে, 50% স্বচ্ছতা */
+}
+ .hero-text{
+  position: relative;
+  z-index: 1;
+ }
+    .hero h1 {
+       font-size: 3rem; 
+       font-weight: bold; 
+      
+      }
+    .hero p { 
+      font-size: 1.2rem;
+       margin-bottom: 20px;
+       }
+          .my-btn{
+  background-color: #E74C3C;
+}
+       /* 222222222222 */
+
+#our-story .img-fluid {
+    object-fit: cover;
+    height: 400px; 
+    width: 100%;
+}
+
+/* For text styling */
+#our-story h2 {
+    color: #333; /* Dark color for the heading */
+}
+
+#about h3 {
+    color: #555; /* Slightly lighter color for the sub-heading */
+}
+       /* 33333333333333 */
+    .section-title {
+       margin-bottom: 50px; 
+       text-align: center;
+        font-weight: bold; 
+        font-size: 2rem;
+       }
+    .menu-card img {
+       height: 200px; 
+       object-fit: cover;
+       }
+   /* 555555555555 */
+  .gallery img {
+       border-radius: 10px;
+       }
+       /* 6666666666666666*/
+       /* Testimonials Section */
+#testimonials {
+    background-color: #fff; /* সাদা ব্যাকগ্রাউন্ড */
+}
+
+#testimonials .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+#testimonials .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6347; /* আপনার বাটনের রঙের সাথে মিল রেখে */
+    margin: 10px auto 0;
+}
+
+.testimonial-card {
+    background: #f8f9fa; /* কার্ডের জন্য হালকা ধূসর ব্যাকগ্রাউন্ড */
+    border-left: 5px solid #ff6347; /* বাম পাশে একটি রঙিন বর্ডার */
+    border-radius: 0.5rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* হোভার করলে কার্ডটি সামান্য উপরে উঠবে */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-author strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.testimonial-rating {
+    display: block;
+    margin-top: 5px;
+}
+/* 77777777777777 */
+#blog {
+    background-color: #f8f9fa; /* হালকা ধূসর ব্যাকগ্রাউন্ড */
+}
+
+#blog .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+#blog .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6347; /* আপনার বাটনের রঙের সাথে মিল রেখে */
+    margin: 10px auto 0;
+}
+
+.blog-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px); /* হোভার করলে কার্ডটি সামান্য উপরে উঠবে */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.blog-card .card-img-top {
+    height: 200px; /* ছবির জন্য নির্দিষ্ট উচ্চতা */
+    object-fit: cover;
+}
+
+.blog-card .card-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.blog-card .card-text {
+    font-size: 0.95rem;
+}
+
+.blog-card .btn {
+   background-color: #ff6347;
+   color: black; 
+   border: none;/* আপনার বাটনের রঙের সাথে মিল রেখে */
+
+}
+
+.blog-card .btn:hover {
+    background-color: white;
+    color: #ff6347;
+}
+       /* 8888888888888 */
+
+    .reservation { 
+      background: #f1f1f1;
+       padding: 50px 0;
+       }
+       /* footer */
+    .footer {
+       background: #222;
+        color: #fff;
+         padding: 30px 0;
+         }
+    .footer a { 
+      color: #fff; 
+      text-decoration: none;
+     }
+  
+
+
+
+
+
+
+
